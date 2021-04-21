@@ -22,11 +22,11 @@ disp("System of non-linear equations in two variables.");
 % Input for 1st function in the form of string. 
 f1=input("\nEnter the 1st function : ",'s');
 % Convert string into 1st function .
-f = str2func(['@(x,y,z)',f1]);       
+f = str2func(['@(x,y)',f1]);       
 % Input for 2nd function in the form of string. 
 g1=input("Enter the 2nd function : ",'s');
 % Convert string into 2nd function.
-g = str2func(['@(x,y,z)',g1]);
+g = str2func(['@(x,y)',g1]);
 
 % A matrix to store partial derivatives of the functions.
 JDiff = [diff(f,x) diff(f,y); ...
